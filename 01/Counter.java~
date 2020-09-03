@@ -1,0 +1,21 @@
+package week01; //declaring class in package week01
+import java.util.*; //importing for Scanner class
+/**
+   Counter.java
+   COSC 241 Lab 1
+*/
+
+public class Counter{ 
+    public static void main(String [] args){ // main method
+        int lines = 0, words = 0;
+        Scanner sc = new Scanner(System.in); // creating an instance of Scanner
+        while(sc.hasNextLine()){ //loop for while a next line is present
+            lines++; //incrementing number of lines
+            while(sc.hasNext()){ //loop for while a next word is present
+                words++; //incrementing number of words
+        }   
+        }//end loop
+        System.out.println("lines: " + lines + "\nwords: " + words);
+    }// end main method
+}// end class
+

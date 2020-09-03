@@ -1,0 +1,48 @@
+package week03;
+
+/**
+ * COSC 241 Lab 3 - RecursionApp.java.
+ * @author Shaun Liew
+ */
+
+public class RecursiveApp{
+
+    /**
+     * main method calls recursive methods and prints their returned values.
+     * @param args is ignored in this case
+     *
+     *  public static void main(String [] args){
+     *  System.out.println("number of digits: " + digits(257));
+     *  System.out.println("sum of digits: " + sumOfDigits(347));
+     *  }
+     */
+
+    /**
+     * recursive method that returns the number of digits of its argument.
+     * @return number of digits in a long
+     * @param n is a long number
+     */
+    
+    public static long digits(long n){
+        if(n < 10){
+            return 1;
+        }
+        return 1 + (digits(n/10));
+            
+    }
+
+    /**
+     * recursive method that returns the sum of digits of its argument.
+     * @return sum of digits in a long
+     * @param n is a long number
+     */
+
+    public static long sumOfDigits(long n){
+        
+        if(n == 0){
+            return 0;
+        }
+        return n%10 + (sumOfDigits(n/10)); 
+    }
+} //end class
+        

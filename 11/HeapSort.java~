@@ -1,0 +1,23 @@
+package week11;
+
+/**
+ * heap sorting.
+ *
+ * @author Shaun Liew
+ */
+
+public class HeapSort extends Sorter {
+    
+    /**
+     * Creates a new HeapSort constructor given integers as parameters.
+     * @param nums integers to sort.
+     */
+
+    public HeapSort(Integer [] nums){
+        super(nums);
+    }
+
+    public void sortNums(){
+        int comparisons = 0;
+        heapSort(0, nums.length-1);
+    }
